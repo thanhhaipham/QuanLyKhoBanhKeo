@@ -87,10 +87,7 @@ namespace demo
             k.ShowDialog();
         }
 
-        private void pbNhaCungCap_Click(object sender, EventArgs e)
-        {
-           
-        }
+ 
 
        
     }

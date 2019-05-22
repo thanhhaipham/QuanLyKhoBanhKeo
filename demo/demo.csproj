@@ -46,29 +46,55 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaoCaoDoanhThu.cs">
+    <Compile Include="BCDT\BaoCaoDoanhThu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BaoCaoDoanhThu.Designer.cs" />
-    <Compile Include="BAOCAODOANHTHUBLL.cs" />
-    <Compile Include="BAOCAODOANHTHUDAL.cs" />
-    <Compile Include="BCDT.cs" />
-    <Compile Include="ChiTietPhieuXuat.cs">
-      <SubType>Form</SubType>
+    <Compile Include="BCDT\BaoCaoDoanhThu.Designer.cs">
+      <DependentUpon>BaoCaoDoanhThu.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChiTietPhieuXuat.Designer.cs" />
+    <Compile Include="BCDT\BAOCAODOANHTHUBLL.cs" />
+    <Compile Include="BCDT\BAOCAODOANHTHUDAL.cs" />
+    <Compile Include="BCDT\BCDT.cs" />
     <Compile Include="CHITIET_PHIEUNHAP.cs" />
     <Compile Include="CHITIET_PHIEUNHAPBLL.cs" />
     <Compile Include="CHITIET_PHIEUNHAPDAL.cs" />
-    <Compile Include="CHITIET_PHIEUXUAT.cs" />
-    <Compile Include="CHITIET_PHIEUXUATBLL.cs" />
-    <Compile Include="CHITIET_PHIEUXUATDAL.cs" />
-    <Compile Include="CT_KKCL.cs" />
-    <Compile Include="CT_KKCLBLL.cs" />
-    <Compile Include="CT_KKCLDAL.cs" />
-    <Compile Include="CT_KKSL.cs" />
-    <Compile Include="CT_KKSLBLL.cs" />
-    <Compile Include="CT_KKSLDAL.cs" />
+    <Compile Include="CL\FormKKCL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CL\FormKKCL.Designer.cs">
+      <DependentUpon>FormKKCL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CL\PHIEUKKCL.cs" />
+    <Compile Include="CL\PHIEUKKCLBLL.cs" />
+    <Compile Include="CL\PHIEUKKCLDAL.cs" />
+    <Compile Include="CTCL\CT_KKCL.cs" />
+    <Compile Include="CTCL\CT_KKCLBLL.cs" />
+    <Compile Include="CTCL\CT_KKCLDAL.cs" />
+    <Compile Include="CTCL\FormCT_KKCL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CTCL\FormCT_KKCL.Designer.cs">
+      <DependentUpon>FormCT_KKCL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CTCL\PHIEU_XUAT.cs" />
+    <Compile Include="CTPX\ChiTietPhieuXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CTPX\ChiTietPhieuXuat.Designer.cs">
+      <DependentUpon>ChiTietPhieuXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CTPX\CHITIET_PHIEUXUAT.cs" />
+    <Compile Include="CTPX\CHITIET_PHIEUXUATBLL.cs" />
+    <Compile Include="CTPX\CHITIET_PHIEUXUATDAL.cs" />
+    <Compile Include="CTSL\CT_KKSL.cs" />
+    <Compile Include="CTSL\CT_KKSLBLL.cs" />
+    <Compile Include="CTSL\CT_KKSLDAL.cs" />
+    <Compile Include="CTSL\FormCT_KKSL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CTSL\FormCT_KKSL.Designer.cs">
+      <DependentUpon>FormCT_KKSL.cs</DependentUpon>
+    </Compile>
     <Compile Include="DanhMuc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,22 +106,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCT_KKCL.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormCT_KKCL.Designer.cs" />
-    <Compile Include="FormCT_KKSL.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormCT_KKSL.Designer.cs" />
-    <Compile Include="FormKKCL.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormKKCL.Designer.cs" />
-    <Compile Include="FormKKSL.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormKKSL.Designer.cs" />
     <Compile Include="FrmChiTiet_PhieuNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,40 +175,52 @@
     <Compile Include="NHANVIEN.cs" />
     <Compile Include="NHANVIENBLL.cs" />
     <Compile Include="NHANVIENDAL.cs" />
-    <Compile Include="PHIEUKKCL.cs" />
-    <Compile Include="PHIEUKKCLBLL.cs" />
-    <Compile Include="PHIEUKKCLDAL.cs" />
-    <Compile Include="PHIEUKKSL.cs" />
-    <Compile Include="PHIEUKKSLBLL.cs" />
-    <Compile Include="PHIEUKKSLDAL.cs" />
     <Compile Include="PHIEUNHAP.cs" />
     <Compile Include="PHIEUNHAPBLL.cs" />
     <Compile Include="PHIEUNHAPDAL.cs" />
-    <Compile Include="PhieuXuat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PhieuXuat.Designer.cs" />
-    <Compile Include="PHIEUXUATBLL.cs" />
-    <Compile Include="PHIEUXUATDAL.cs" />
-    <Compile Include="PHIEU_XUAT.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="thembk.cs">
+    <Compile Include="PX\PhieuXuat.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PX\PhieuXuat.Designer.cs">
+      <DependentUpon>PhieuXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PX\PHIEUXUATBLL.cs" />
+    <Compile Include="PX\PHIEUXUATDAL.cs" />
+    <Compile Include="PX\PHIEU_XUAT.cs" />
+    <Compile Include="SL\CT_KKSL.cs" />
+    <Compile Include="SL\CT_KKSLBLL.cs" />
+    <Compile Include="SL\CT_KKSLDAL.cs" />
+    <Compile Include="SL\FormKKSL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SL\FormKKSL.Designer.cs">
+      <DependentUpon>FormKKSL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="thembk.cs" />
     <Compile Include="thembk.Designer.cs">
       <DependentUpon>thembk.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BaoCaoDoanhThu.resx" />
-    <EmbeddedResource Include="ChiTietPhieuXuat.resx" />
+    <EmbeddedResource Include="BCDT\BaoCaoDoanhThu.resx">
+      <DependentUpon>BaoCaoDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CL\FormKKCL.resx">
+      <DependentUpon>FormKKCL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTCL\FormCT_KKCL.resx">
+      <DependentUpon>FormCT_KKCL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTPX\ChiTietPhieuXuat.resx">
+      <DependentUpon>ChiTietPhieuXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTSL\FormCT_KKSL.resx">
+      <DependentUpon>FormCT_KKSL.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc.resx" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCT_KKCL.resx" />
-    <EmbeddedResource Include="FormCT_KKSL.resx" />
-    <EmbeddedResource Include="FormKKCL.resx" />
-    <EmbeddedResource Include="FormKKSL.resx" />
     <EmbeddedResource Include="FrmChiTiet_PhieuNhap.resx">
       <DependentUpon>FrmChiTiet_PhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,7 +248,6 @@
     <EmbeddedResource Include="FrmPhieuNhap.resx">
       <DependentUpon>FrmPhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PhieuXuat.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -237,6 +258,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="PX\PhieuXuat.resx">
+      <DependentUpon>PhieuXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SL\FormKKSL.resx">
+      <DependentUpon>FormKKSL.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -288,6 +315,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\finding-your-spark-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
