@@ -12,7 +12,7 @@ namespace demo
         string conStr;
         public DataConnection()
         {
-            conStr = "Data Source=ADMIN-PC\\SQLEXPRESS;Initial Catalog=N11_T3_QUANLYKHOBANHKEO;Integrated Security=True";
+            conStr = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=QUANLYKHOBANHKEO;Integrated Security=True";
         }
         public SqlConnection getConnect()
         {
