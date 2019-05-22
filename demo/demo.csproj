@@ -212,10 +212,6 @@
     <Compile Include="SL\FormKKSL.Designer.cs">
       <DependentUpon>FormKKSL.cs</DependentUpon>
     </Compile>
-    <Compile Include="thembk.cs" />
-    <Compile Include="thembk.Designer.cs">
-      <DependentUpon>thembk.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="BCDT\BaoCaoDoanhThu.resx">
       <DependentUpon>BaoCaoDoanhThu.cs</DependentUpon>
     </EmbeddedResource>
