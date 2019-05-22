@@ -76,7 +76,6 @@
     <Compile Include="CTCL\FormCT_KKCL.Designer.cs">
       <DependentUpon>FormCT_KKCL.cs</DependentUpon>
     </Compile>
-    <Compile Include="CTCL\PHIEU_XUAT.cs" />
     <Compile Include="CTPX\ChiTietPhieuXuat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,19 +202,15 @@
     <Compile Include="PX\PHIEUXUATBLL.cs" />
     <Compile Include="PX\PHIEUXUATDAL.cs" />
     <Compile Include="PX\PHIEU_XUAT.cs" />
-    <Compile Include="SL\CT_KKSL.cs" />
-    <Compile Include="SL\CT_KKSLBLL.cs" />
-    <Compile Include="SL\CT_KKSLDAL.cs" />
     <Compile Include="SL\FormKKSL.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SL\FormKKSL.Designer.cs">
       <DependentUpon>FormKKSL.cs</DependentUpon>
     </Compile>
-    <Compile Include="thembk.cs" />
-    <Compile Include="thembk.Designer.cs">
-      <DependentUpon>thembk.cs</DependentUpon>
-    </Compile>
+    <Compile Include="SL\PHIEUKKSL.cs" />
+    <Compile Include="SL\PHIEUKKSLBLL.cs" />
+    <Compile Include="SL\PHIEUKKSLDAL.cs" />
     <EmbeddedResource Include="BCDT\BaoCaoDoanhThu.resx">
       <DependentUpon>BaoCaoDoanhThu.cs</DependentUpon>
     </EmbeddedResource>
