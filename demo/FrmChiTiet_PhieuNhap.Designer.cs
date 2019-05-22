@@ -52,6 +52,7 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -270,12 +271,24 @@
             this.label7.TabIndex = 17;
             this.label7.Text = "Tìm Kiếm";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label8.Location = new System.Drawing.Point(274, 28);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(167, 24);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Chi tiết phiếu nhập";
+            // 
             // FrmChiTiet_PhieuNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(944, 566);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.btnXoa);
@@ -329,5 +342,6 @@
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
