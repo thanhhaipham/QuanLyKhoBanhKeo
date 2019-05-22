@@ -53,7 +53,10 @@
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnXemCTPN = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -278,6 +281,29 @@
             this.btnXemCTPN.TabIndex = 16;
             this.btnXemCTPN.Text = "Xem chi tiết phiếu";
             this.btnXemCTPN.UseVisualStyleBackColor = true;
+            this.btnXemCTPN.Click += new System.EventHandler(this.btnXemCTPN_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label7.Location = new System.Drawing.Point(208, 24);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(107, 24);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Phiếu nhập";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::demo.Properties.Resources.exit_icon_379721;
+            this.pictureBox1.Location = new System.Drawing.Point(830, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(102, 79);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // FrmPhieuNhap
             // 
@@ -285,6 +311,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(944, 566);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnXemCTPN);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtTimKiem);
@@ -307,6 +335,7 @@
             this.Text = "FrmPhieuNhap";
             this.Load += new System.EventHandler(this.FrmPhieuNhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -339,5 +368,7 @@
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnXemCTPN;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
