@@ -49,6 +49,12 @@
     <Compile Include="CHITIET_PHIEUNHAP.cs" />
     <Compile Include="CHITIET_PHIEUNHAPBLL.cs" />
     <Compile Include="CHITIET_PHIEUNHAPDAL.cs" />
+    <Compile Include="CT_KKCL.cs" />
+    <Compile Include="CT_KKCLBLL.cs" />
+    <Compile Include="CT_KKCLDAL.cs" />
+    <Compile Include="CT_KKSL.cs" />
+    <Compile Include="CT_KKSLBLL.cs" />
+    <Compile Include="CT_KKSLDAL.cs" />
     <Compile Include="DataConnection.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -56,6 +62,22 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCT_KKCL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCT_KKCL.Designer.cs" />
+    <Compile Include="FormCT_KKSL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCT_KKSL.Designer.cs" />
+    <Compile Include="FormKKCL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKKCL.Designer.cs" />
+    <Compile Include="FormKKSL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKKSL.Designer.cs" />
     <Compile Include="FrmChiTiet_PhieuNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +147,12 @@
     <Compile Include="NHANVIEN.cs" />
     <Compile Include="NHANVIENBLL.cs" />
     <Compile Include="NHANVIENDAL.cs" />
+    <Compile Include="PHIEUKKCL.cs" />
+    <Compile Include="PHIEUKKCLBLL.cs" />
+    <Compile Include="PHIEUKKCLDAL.cs" />
+    <Compile Include="PHIEUKKSL.cs" />
+    <Compile Include="PHIEUKKSLBLL.cs" />
+    <Compile Include="PHIEUKKSLDAL.cs" />
     <Compile Include="PHIEUNHAP.cs" />
     <Compile Include="PHIEUNHAPBLL.cs" />
     <Compile Include="PHIEUNHAPDAL.cs" />
@@ -139,6 +167,10 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCT_KKCL.resx" />
+    <EmbeddedResource Include="FormCT_KKSL.resx" />
+    <EmbeddedResource Include="FormKKCL.resx" />
+    <EmbeddedResource Include="FormKKSL.resx" />
     <EmbeddedResource Include="FrmChiTiet_PhieuNhap.resx">
       <DependentUpon>FrmChiTiet_PhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
