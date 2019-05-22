@@ -73,6 +73,16 @@ namespace demo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1521793081_007422_blue_jelly_icon_arrows_solid_hand_points_right {
+            get {
+                object obj = ResourceManager.GetObject("1521793081_007422-blue-jelly-icon-arrows-solid-hand-points-right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap android_direct_from_instagram {
             get {
                 object obj = ResourceManager.GetObject("android-direct-from-instagram", resourceCulture);
