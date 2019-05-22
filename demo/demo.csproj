@@ -236,9 +236,6 @@
     <EmbeddedResource Include="DM_kksl.resx">
       <DependentUpon>DM_kksl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BaoCaoDoanhThu.resx" />
-    <EmbeddedResource Include="ChiTietPhieuXuat.resx" />
-    <EmbeddedResource Include="DanhMuc.resx" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
