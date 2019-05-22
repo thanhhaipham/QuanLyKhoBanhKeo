@@ -203,9 +203,6 @@
     <Compile Include="PX\PHIEUXUATBLL.cs" />
     <Compile Include="PX\PHIEUXUATDAL.cs" />
     <Compile Include="PX\PHIEU_XUAT.cs" />
-    <Compile Include="SL\CT_KKSL.cs" />
-    <Compile Include="SL\CT_KKSLBLL.cs" />
-    <Compile Include="SL\CT_KKSLDAL.cs" />
     <Compile Include="SL\FormKKSL.cs">
       <SubType>Form</SubType>
     </Compile>
