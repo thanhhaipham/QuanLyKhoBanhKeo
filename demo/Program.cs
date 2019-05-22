@@ -17,7 +17,7 @@ namespace demo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PhieuXuat());
+            Application.Run(new FormCT_KKCL());
         }
     }
 }

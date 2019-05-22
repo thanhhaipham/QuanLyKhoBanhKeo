@@ -183,12 +183,6 @@
     <Compile Include="PHIEU_XUAT.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="thembk.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="thembk.Designer.cs">
-      <DependentUpon>thembk.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="BaoCaoDoanhThu.resx" />
     <EmbeddedResource Include="ChiTietPhieuXuat.resx" />
     <EmbeddedResource Include="DanhMuc.resx" />
