@@ -113,6 +113,16 @@ namespace demo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exit_icon_379721 {
+            get {
+                object obj = ResourceManager.GetObject("exit-icon-379721", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap finding_your_spark_2 {
             get {
                 object obj = ResourceManager.GetObject("finding-your-spark-2", resourceCulture);

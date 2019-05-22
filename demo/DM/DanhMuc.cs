@@ -29,10 +29,6 @@ namespace ThucTapNhom
             ct.ShowDialog();
         }
 
-        private void btnBCDT_Click(object sender, EventArgs e)
-        {
-            BaoCaoDoanhThu bc = new BaoCaoDoanhThu();
-            bc.ShowDialog();
-        }
+       
     }
 }

@@ -103,6 +103,7 @@
             this.btnNhaCungCap.TabIndex = 5;
             this.btnNhaCungCap.Text = "Nhà cung cấp";
             this.btnNhaCungCap.UseVisualStyleBackColor = false;
+            this.btnNhaCungCap.Click += new System.EventHandler(this.btnNhaCungCap_Click);
             // 
             // btnNhanVien
             // 

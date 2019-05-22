@@ -95,11 +95,25 @@
     <Compile Include="CTSL\FormCT_KKSL.Designer.cs">
       <DependentUpon>FormCT_KKSL.cs</DependentUpon>
     </Compile>
-    <Compile Include="DanhMuc.cs">
+    <Compile Include="DataConnection.cs" />
+    <Compile Include="DM\DanhMuc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DanhMuc.Designer.cs" />
-    <Compile Include="DataConnection.cs" />
+    <Compile Include="DM\DanhMuc.Designer.cs">
+      <DependentUpon>DanhMuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DM_kkcl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DM_kkcl.Designer.cs">
+      <DependentUpon>DM_kkcl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DM_kksl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DM_kksl.Designer.cs">
+      <DependentUpon>DM_kksl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -217,7 +231,15 @@
     <EmbeddedResource Include="CTSL\FormCT_KKSL.resx">
       <DependentUpon>FormCT_KKSL.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DanhMuc.resx" />
+    <EmbeddedResource Include="DM\DanhMuc.resx">
+      <DependentUpon>DanhMuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DM_kkcl.resx">
+      <DependentUpon>DM_kkcl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DM_kksl.resx">
+      <DependentUpon>DM_kksl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -319,6 +341,9 @@
   <ItemGroup>
     <Folder Include="bin\Debug\" />
     <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-icon-379721.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

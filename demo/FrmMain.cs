@@ -35,8 +35,8 @@ namespace demo
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            FormKKSL sl = new FormKKSL();
-            sl.ShowDialog();
+            DM_kksl dm = new DM_kksl();
+            dm.ShowDialog();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -47,8 +47,8 @@ namespace demo
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            PhieuXuat px = new PhieuXuat();
-            px.ShowDialog();
+            DanhMuc d = new DanhMuc();
+            d.ShowDialog();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -87,8 +87,17 @@ namespace demo
             k.ShowDialog();
         }
 
- 
+        private void pbNhaCungCap_Click(object sender, EventArgs e)
+        {
+            Form1 f = new Form1();
+            f.ShowDialog();
+        }
 
-       
+        private void btnNhaCungCap_Click(object sender, EventArgs e)
+        {
+            Form1 f = new Form1();
+            f.ShowDialog();
+        }
+
     }
 }

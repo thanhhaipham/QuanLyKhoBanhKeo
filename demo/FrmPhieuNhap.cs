@@ -103,5 +103,19 @@ namespace demo
             else
                 ShowAllPN();
         }
+
+        private void btnXemCTPN_Click(object sender, EventArgs e)
+        {
+            FrmChiTiet_PhieuNhap ctpn = new FrmChiTiet_PhieuNhap();
+            ctpn.ShowDialog();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            FrmMain main = new FrmMain();
+
+            main.ShowDialog();
+            this.Close();
+        }
     }
 }
