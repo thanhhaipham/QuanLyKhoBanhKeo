@@ -40,8 +40,8 @@ namespace demo
                 if (txtUsername.Text == "Admin" && txtPass.Text == "1110")
                 {
                     MessageBox.Show("Đăng nhập thành công. Welcome to our Shop !");
-                    FrmNghiepVu nv = new FrmNghiepVu();
-                    nv.ShowDialog();
+                    FrmMain main = new FrmMain();
+                    main.ShowDialog();
                     this.Close();
                 }
                 else
