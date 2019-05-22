@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A56B8223-4DB7-4199-B814-4908F80201C1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>demo</RootNamespace>
+    <AssemblyName>demo</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CHITIET_PHIEUNHAP.cs" />
+    <Compile Include="CHITIET_PHIEUNHAPBLL.cs" />
+    <Compile Include="CHITIET_PHIEUNHAPDAL.cs" />
+    <Compile Include="DataConnection.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChiTiet_PhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChiTiet_PhieuNhap.Designer.cs">
+      <DependentUpon>FrmChiTiet_PhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHangHoa.Designer.cs">
+      <DependentUpon>FrmHangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHHTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHHTK.Designer.cs">
+      <DependentUpon>FrmHHTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKho.Designer.cs">
+      <DependentUpon>FrmKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNghiepVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNghiepVu.Designer.cs">
+      <DependentUpon>FrmNghiepVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNhanVien.Designer.cs">
+      <DependentUpon>FrmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPhieuNhap.Designer.cs">
+      <DependentUpon>FrmPhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HANGHOA.cs" />
+    <Compile Include="HANGHOABLL.cs" />
+    <Compile Include="HANGHOADAL.cs" />
+    <Compile Include="HHTK.cs" />
+    <Compile Include="HHTKBLL.cs" />
+    <Compile Include="HHTKDAL.cs" />
+    <Compile Include="KHO.cs" />
+    <Compile Include="KHOBLL.cs" />
+    <Compile Include="KHODAL.cs" />
+    <Compile Include="NHACUNGCAP.cs" />
+    <Compile Include="NHACUNGCAPBLL.cs" />
+    <Compile Include="NHACUNGCAPDAL.cs" />
+    <Compile Include="NHANVIEN.cs" />
+    <Compile Include="NHANVIENBLL.cs" />
+    <Compile Include="NHANVIENDAL.cs" />
+    <Compile Include="PHIEUNHAP.cs" />
+    <Compile Include="PHIEUNHAPBLL.cs" />
+    <Compile Include="PHIEUNHAPDAL.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChiTiet_PhieuNhap.resx">
+      <DependentUpon>FrmChiTiet_PhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHangHoa.resx">
+      <DependentUpon>FrmHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHHTK.resx">
+      <DependentUpon>FrmHHTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKho.resx">
+      <DependentUpon>FrmKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNghiepVu.resx">
+      <DependentUpon>FrmNghiepVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNhanVien.resx">
+      <DependentUpon>FrmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPhieuNhap.resx">
+      <DependentUpon>FrmPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\android-direct-from-instagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar-default-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lockitLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\products-icon-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\you-are-here-icon-22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon-csp-suppliers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-employment-20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11_box_package_parcel_logistic_delivery_unpack_open_shipping_import-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-icon-37972.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass-1020142_960_720.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finding-your-spark-2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
