@@ -108,13 +108,8 @@ namespace demo
         private void btnXemCTPN_Click(object sender, EventArgs e)
         {
             string sopn = txtSOPN.Text;
-            if (!string.IsNullOrEmpty(sopn))
-            {
-                DataTable dt = bllCTPN.getAllCTPN1(sopn);
-                dataGridView1.DataSource = dt;
-            }
-            else
-                bllCTPN.getAllCTPN();
+            FrmChiTiet_PhieuNhap c = new FrmChiTiet_PhieuNhap();
+            c.ShowDialog();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

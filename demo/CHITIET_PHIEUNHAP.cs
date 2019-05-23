@@ -14,6 +14,11 @@ namespace demo
         public int SLNHAN { get; set; }
         public int DONGIA { get; set; }
         public string SOHIEUDH { get; set; }
+        public CHITIET_PHIEUNHAP(string sopn) {
+            sopn = this.SOPN;
+        }
+
+
 
     }
 }
