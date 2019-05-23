@@ -384,6 +384,7 @@
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMain";
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbNhaCungCap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHangHoa)).EndInit();

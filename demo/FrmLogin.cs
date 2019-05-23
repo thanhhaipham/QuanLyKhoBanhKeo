@@ -56,8 +56,9 @@ namespace demo
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            FrmLogin login = new FrmLogin();
-            login.ShowDialog();
+            
+            this.Close();
+            
         }
     }
 }

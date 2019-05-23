@@ -13,8 +13,6 @@ namespace demo
 {
     public partial class FrmMain : Form
     {
-        public object BAOCAODOANHTHU { get; private set; }
-
         public FrmMain()
         {
             InitializeComponent();
@@ -41,7 +39,7 @@ namespace demo
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            FormKKCL cl = new FormKKCL();
+            DM_kkcl cl = new DM_kkcl();
             cl.ShowDialog();
         }
 
@@ -99,5 +97,9 @@ namespace demo
             f.ShowDialog();
         }
 
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

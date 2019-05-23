@@ -13,6 +13,7 @@ namespace demo
     public partial class FrmPhieuNhap : Form
     {
         PHIEUNHAPBLL bllPN;
+        CHITIET_PHIEUNHAPBLL bllCTPN;
         public FrmPhieuNhap()
         {
             InitializeComponent();
@@ -106,8 +107,14 @@ namespace demo
 
         private void btnXemCTPN_Click(object sender, EventArgs e)
         {
-            FrmChiTiet_PhieuNhap ctpn = new FrmChiTiet_PhieuNhap();
-            ctpn.ShowDialog();
+            string sopn = txtSOPN.Text;
+            if (!string.IsNullOrEmpty(sopn))
+            {
+                DataTable dt = bllCTPN.getAllCTPN1(sopn);
+                dataGridView1.DataSource = dt;
+            }
+            else
+                bllCTPN.getAllCTPN();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

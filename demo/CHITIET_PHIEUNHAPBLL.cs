@@ -34,5 +34,9 @@ namespace demo
         {
             return dalCTPN.FindCTPN(c);
         }
+        public DataTable getAllCTPN1(string SOPN)
+        {
+            return dalCTPN.getAllCTPN1(SOPN);
+        }
     }
 }

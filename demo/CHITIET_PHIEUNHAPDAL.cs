@@ -104,6 +104,17 @@ namespace demo
             con.Close();
             return dt;
         }
+        public DataTable getAllCTPN1(string SOPN)
+        {
+            string sql = "SELECT SOPN, C.MAHH, H.TENHH, SLGIAO, SLNHAN, C.DONGIA, SOHIEUDH FROM CHITIET_PHIEUNHAP C, HANGHOA H WHERE C.SOPN LIKE '%" +SOPN+ "%'";
+            SqlConnection con = dc.getConnect();
+            da = new SqlDataAdapter(sql, con);
+            con.Open();
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            con.Close();
+            return dt;
+        }
     }
 }
 
