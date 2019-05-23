@@ -39,22 +39,23 @@
             this.dtpTN = new System.Windows.Forms.DateTimePicker();
             this.dtpDN = new System.Windows.Forms.DateTimePicker();
             this.dataGridViewBCDT = new System.Windows.Forms.DataGridView();
-            this.SOPBC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MAKHO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TUNGAY = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DENNGAY = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOPX = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnTK = new System.Windows.Forms.Button();
             this.txtTK = new System.Windows.Forms.TextBox();
+            this.SOPBC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MAKHO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TUNGAY = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DENNGAY = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOPX = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBCDT)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(26, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 13);
@@ -64,6 +65,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Location = new System.Drawing.Point(26, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 13);
@@ -73,6 +75,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Red;
             this.label3.Location = new System.Drawing.Point(237, 27);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 13);
@@ -82,7 +85,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(237, 74);
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(230, 76);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 13);
             this.label4.TabIndex = 3;
@@ -91,6 +95,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Red;
             this.label5.Location = new System.Drawing.Point(529, 28);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 13);
@@ -147,74 +152,49 @@
             this.dataGridViewBCDT.TabIndex = 10;
             this.dataGridViewBCDT.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBCDT_CellClick);
             // 
-            // SOPBC
-            // 
-            this.SOPBC.DataPropertyName = "SOPBC";
-            this.SOPBC.HeaderText = "SP Báo Cáo";
-            this.SOPBC.Name = "SOPBC";
-            // 
-            // MAKHO
-            // 
-            this.MAKHO.DataPropertyName = "MAKHO";
-            this.MAKHO.HeaderText = "Mã Kho";
-            this.MAKHO.Name = "MAKHO";
-            // 
-            // TUNGAY
-            // 
-            this.TUNGAY.DataPropertyName = "TUNGAY";
-            this.TUNGAY.HeaderText = "Từ Ngày";
-            this.TUNGAY.Name = "TUNGAY";
-            // 
-            // DENNGAY
-            // 
-            this.DENNGAY.DataPropertyName = "DENNGAY";
-            this.DENNGAY.HeaderText = "Đến Ngày";
-            this.DENNGAY.Name = "DENNGAY";
-            // 
-            // SOPX
-            // 
-            this.SOPX.DataPropertyName = "SOPX";
-            this.SOPX.HeaderText = "Số PX";
-            this.SOPX.Name = "SOPX";
-            // 
             // btnThem
             // 
+            this.btnThem.BackColor = System.Drawing.Color.Turquoise;
             this.btnThem.Location = new System.Drawing.Point(29, 153);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 23);
             this.btnThem.TabIndex = 11;
             this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnSua
             // 
+            this.btnSua.BackColor = System.Drawing.Color.Turquoise;
+            this.btnSua.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnSua.Location = new System.Drawing.Point(167, 151);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 23);
             this.btnSua.TabIndex = 12;
             this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.UseVisualStyleBackColor = false;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
+            this.btnXoa.BackColor = System.Drawing.Color.Turquoise;
             this.btnXoa.Location = new System.Drawing.Point(310, 151);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 23);
             this.btnXoa.TabIndex = 13;
             this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.UseVisualStyleBackColor = false;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnTK
             // 
+            this.btnTK.BackColor = System.Drawing.Color.Turquoise;
             this.btnTK.Location = new System.Drawing.Point(463, 151);
             this.btnTK.Name = "btnTK";
             this.btnTK.Size = new System.Drawing.Size(75, 23);
             this.btnTK.TabIndex = 14;
             this.btnTK.Text = "Tìm Kiếm";
-            this.btnTK.UseVisualStyleBackColor = true;
+            this.btnTK.UseVisualStyleBackColor = false;
             // 
             // txtTK
             // 
@@ -224,10 +204,46 @@
             this.txtTK.TabIndex = 15;
             this.txtTK.TextChanged += new System.EventHandler(this.txtTK_TextChanged);
             // 
+            // SOPBC
+            // 
+            this.SOPBC.DataPropertyName = "SOPBC";
+            this.SOPBC.HeaderText = "SP Báo Cáo";
+            this.SOPBC.Name = "SOPBC";
+            this.SOPBC.Width = 150;
+            // 
+            // MAKHO
+            // 
+            this.MAKHO.DataPropertyName = "MAKHO";
+            this.MAKHO.HeaderText = "Mã Kho";
+            this.MAKHO.Name = "MAKHO";
+            this.MAKHO.Width = 150;
+            // 
+            // TUNGAY
+            // 
+            this.TUNGAY.DataPropertyName = "TUNGAY";
+            this.TUNGAY.HeaderText = "Từ Ngày";
+            this.TUNGAY.Name = "TUNGAY";
+            this.TUNGAY.Width = 150;
+            // 
+            // DENNGAY
+            // 
+            this.DENNGAY.DataPropertyName = "DENNGAY";
+            this.DENNGAY.HeaderText = "Đến Ngày";
+            this.DENNGAY.Name = "DENNGAY";
+            this.DENNGAY.Width = 150;
+            // 
+            // SOPX
+            // 
+            this.SOPX.DataPropertyName = "SOPX";
+            this.SOPX.HeaderText = "Số PX";
+            this.SOPX.Name = "SOPX";
+            this.SOPX.Width = 160;
+            // 
             // BaoCaoDoanhThu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtTK);
             this.Controls.Add(this.btnTK);
