@@ -33,7 +33,7 @@ namespace demo
         {
             PHIEUNHAP pn = new PHIEUNHAP();
             pn.SOPN = txtSOPN.Text;
-            pn.NGAYNHAP = DateTime.Parse(txtNGAYNHAP.Text);
+            pn.NGAYNHAP = DateTime.Parse(dtpNGAYNHAP.Value.ToString());
             pn.MANV = txtMANV.Text;
             pn.MANCC = txtMANCC.Text;
             pn.MAKHO = txtMAKHO.Text;
@@ -52,7 +52,7 @@ namespace demo
             if (index >= 0)
             {
                 txtSOPN.Text = dataGridView1.Rows[index].Cells["SOPN"].Value.ToString();
-                txtNGAYNHAP.Text = dataGridView1.Rows[index].Cells["NGAYNHAP"].Value.ToString();
+                dtpNGAYNHAP.Text = dataGridView1.Rows[index].Cells["NGAYNHAP"].Value.ToString();
                 txtMAKHO.Text = dataGridView1.Rows[index].Cells["MAKHO"].Value.ToString();
                 txtMANCC.Text = dataGridView1.Rows[index].Cells["MANCC"].Value.ToString();
                 txtMANV.Text = dataGridView1.Rows[index].Cells["MANV"].Value.ToString();
@@ -63,7 +63,7 @@ namespace demo
         {
             PHIEUNHAP pn = new PHIEUNHAP();
             pn.SOPN = txtSOPN.Text;
-            pn.NGAYNHAP = DateTime.Parse(txtNGAYNHAP.Text);
+            pn.NGAYNHAP = DateTime.Parse(dtpNGAYNHAP.Value.ToString());
             pn.MANV = txtMANV.Text;
             pn.MANCC = txtMANCC.Text;
             pn.MAKHO = txtMAKHO.Text;

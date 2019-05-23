@@ -46,7 +46,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtTENNV = new System.Windows.Forms.TextBox();
             this.txtMANV = new System.Windows.Forms.TextBox();
-            this.txtNS = new System.Windows.Forms.TextBox();
             this.txtDIACHI = new System.Windows.Forms.TextBox();
             this.txtLUONG = new System.Windows.Forms.TextBox();
             this.txtMAKHO = new System.Windows.Forms.TextBox();
@@ -59,6 +58,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txtGT = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -227,14 +227,6 @@
             this.txtMANV.Size = new System.Drawing.Size(132, 25);
             this.txtMANV.TabIndex = 9;
             // 
-            // txtNS
-            // 
-            this.txtNS.Location = new System.Drawing.Point(183, 204);
-            this.txtNS.Multiline = true;
-            this.txtNS.Name = "txtNS";
-            this.txtNS.Size = new System.Drawing.Size(132, 25);
-            this.txtNS.TabIndex = 10;
-            // 
             // txtDIACHI
             // 
             this.txtDIACHI.Location = new System.Drawing.Point(183, 259);
@@ -347,12 +339,20 @@
             this.label10.TabIndex = 22;
             this.label10.Text = "Giới tính";
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(183, 206);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 23;
+            // 
             // FrmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(944, 566);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtGT);
             this.Controls.Add(this.label9);
@@ -365,7 +365,6 @@
             this.Controls.Add(this.txtMAKHO);
             this.Controls.Add(this.txtLUONG);
             this.Controls.Add(this.txtDIACHI);
-            this.Controls.Add(this.txtNS);
             this.Controls.Add(this.txtMANV);
             this.Controls.Add(this.txtTENNV);
             this.Controls.Add(this.label7);
@@ -405,7 +404,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtTENNV;
         private System.Windows.Forms.TextBox txtMANV;
-        private System.Windows.Forms.TextBox txtNS;
         private System.Windows.Forms.TextBox txtDIACHI;
         private System.Windows.Forms.TextBox txtLUONG;
         private System.Windows.Forms.TextBox txtMAKHO;
@@ -418,5 +416,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtGT;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

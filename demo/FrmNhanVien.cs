@@ -34,7 +34,7 @@ namespace demo
             NHANVIEN nv = new NHANVIEN();
             nv.MANV = txtMANV.Text;
             nv.TENNV = txtTENNV.Text;
-            nv.NS = DateTime.Parse(txtNS.Text);
+            nv.NS = DateTime.Parse(dateTimePicker1.Value.ToString());
             nv.SDTNV = int.Parse(txtSDTNV.Text);
             nv.GT = txtGT.Text;
             nv.LUONG = int.Parse(txtLUONG.Text);
@@ -55,7 +55,7 @@ namespace demo
             {
                 txtMANV.Text = dataGridView1.Rows[index].Cells["MANV"].Value.ToString();
                 txtTENNV.Text = dataGridView1.Rows[index].Cells["TENNV"].Value.ToString();
-                txtNS.Text = dataGridView1.Rows[index].Cells["NS"].Value.ToString();
+                dateTimePicker1.Text = dataGridView1.Rows[index].Cells["NS"].Value.ToString();
                 txtGT.Text = dataGridView1.Rows[index].Cells["GT"].Value.ToString();
                 txtSDTNV.Text = dataGridView1.Rows[index].Cells["SDTNV"].Value.ToString();
                 txtLUONG.Text = dataGridView1.Rows[index].Cells["LUONG"].Value.ToString();
@@ -68,7 +68,7 @@ namespace demo
             NHANVIEN nv = new NHANVIEN();
             nv.MANV = txtMANV.Text;
             nv.TENNV = txtTENNV.Text;
-            nv.NS = DateTime.Parse(txtNS.Text);
+            nv.NS = DateTime.Parse(dateTimePicker1.Value.ToString());
             nv.SDTNV = int.Parse(txtSDTNV.Text);
             nv.GT = txtGT.Text;
             nv.LUONG = int.Parse(txtLUONG.Text);

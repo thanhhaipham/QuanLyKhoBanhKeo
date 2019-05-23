@@ -43,7 +43,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtSOPN = new System.Windows.Forms.TextBox();
-            this.txtNGAYNHAP = new System.Windows.Forms.TextBox();
             this.txtMAKHO = new System.Windows.Forms.TextBox();
             this.txtMANCC = new System.Windows.Forms.TextBox();
             this.txtMANV = new System.Windows.Forms.TextBox();
@@ -55,6 +54,7 @@
             this.btnXemCTPN = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dtpNGAYNHAP = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -149,7 +149,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(38, 118);
+            this.label2.Location = new System.Drawing.Point(3, 117);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 20);
             this.label2.TabIndex = 2;
@@ -171,7 +171,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(286, 81);
+            this.label4.Location = new System.Drawing.Point(331, 81);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(131, 20);
             this.label4.TabIndex = 4;
@@ -182,7 +182,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(286, 116);
+            this.label5.Location = new System.Drawing.Point(331, 116);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(103, 20);
             this.label5.TabIndex = 5;
@@ -195,13 +195,6 @@
             this.txtSOPN.Size = new System.Drawing.Size(108, 20);
             this.txtSOPN.TabIndex = 6;
             // 
-            // txtNGAYNHAP
-            // 
-            this.txtNGAYNHAP.Location = new System.Drawing.Point(138, 116);
-            this.txtNGAYNHAP.Name = "txtNGAYNHAP";
-            this.txtNGAYNHAP.Size = new System.Drawing.Size(108, 20);
-            this.txtNGAYNHAP.TabIndex = 7;
-            // 
             // txtMAKHO
             // 
             this.txtMAKHO.Location = new System.Drawing.Point(138, 161);
@@ -211,14 +204,14 @@
             // 
             // txtMANCC
             // 
-            this.txtMANCC.Location = new System.Drawing.Point(433, 80);
+            this.txtMANCC.Location = new System.Drawing.Point(478, 80);
             this.txtMANCC.Name = "txtMANCC";
             this.txtMANCC.Size = new System.Drawing.Size(100, 20);
             this.txtMANCC.TabIndex = 9;
             // 
             // txtMANV
             // 
-            this.txtMANV.Location = new System.Drawing.Point(433, 118);
+            this.txtMANV.Location = new System.Drawing.Point(478, 118);
             this.txtMANV.Name = "txtMANV";
             this.txtMANV.Size = new System.Drawing.Size(100, 20);
             this.txtMANV.TabIndex = 10;
@@ -305,12 +298,20 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // dtpNGAYNHAP
+            // 
+            this.dtpNGAYNHAP.Location = new System.Drawing.Point(139, 116);
+            this.dtpNGAYNHAP.Name = "dtpNGAYNHAP";
+            this.dtpNGAYNHAP.Size = new System.Drawing.Size(186, 20);
+            this.dtpNGAYNHAP.TabIndex = 19;
+            // 
             // FrmPhieuNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(944, 566);
+            this.Controls.Add(this.dtpNGAYNHAP);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnXemCTPN);
@@ -322,7 +323,6 @@
             this.Controls.Add(this.txtMANV);
             this.Controls.Add(this.txtMANCC);
             this.Controls.Add(this.txtMAKHO);
-            this.Controls.Add(this.txtNGAYNHAP);
             this.Controls.Add(this.txtSOPN);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -358,7 +358,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtSOPN;
-        private System.Windows.Forms.TextBox txtNGAYNHAP;
         private System.Windows.Forms.TextBox txtMAKHO;
         private System.Windows.Forms.TextBox txtMANCC;
         private System.Windows.Forms.TextBox txtMANV;
@@ -370,5 +369,6 @@
         private System.Windows.Forms.Button btnXemCTPN;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DateTimePicker dtpNGAYNHAP;
     }
 }
